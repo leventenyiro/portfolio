@@ -1,0 +1,95 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Candal&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap");
+body {
+  font-family: 'Inter', sans-serif !important;
+  position: relative;
+  min-height: 100vh;
+}
+
+h1 {
+  font-weight: 900 !important;
+  font-size: 50px !important;
+  color: black;
+}
+
+nav {
+  background-color: #ffffffbb;
+  -webkit-backdrop-filter: blur(10px);
+          backdrop-filter: blur(10px);
+}
+
+.navbar-brand img {
+  height: 18px;
+}
+
+.navbar-toggler {
+  border: 0px !important;
+  outline: none !important;
+}
+
+main {
+  padding-top: 7%;
+  min-height: 75vh;
+}
+
+#hero img {
+  max-height: 400px;
+}
+
+#hero h1 {
+  padding-top: 60px;
+}
+
+#hero button {
+  border-radius: 8px;
+}
+
+h2 {
+  color: black;
+  font-size: 24px;
+  font-weight: 800 !important;
+  padding-bottom: 15px;
+}
+
+p {
+  text-align: justify;
+  color: #424242;
+}
+
+article h2, article p {
+  padding: 10px;
+}
+
+footer {
+  background-color: #253237;
+  color: #9db4c0;
+  font-size: 14px;
+}
+
+footer li {
+  padding-top: 5px;
+}
+
+footer li a {
+  text-decoration: none;
+  color: #c2dfe3;
+  font-size: 16px;
+  -webkit-transition: 0.04s;
+  transition: 0.04s;
+}
+
+footer li a:hover {
+  color: #9db4c0;
+  -webkit-transition: 0.04s;
+  transition: 0.04s;
+}
+
+footer img {
+  max-width: 20%;
+}
+
+textarea {
+  min-height: 12em !important;
+}
+/*# sourceMappingURL=style.css.map */

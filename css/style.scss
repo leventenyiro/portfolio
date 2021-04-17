@@ -1,0 +1,98 @@
+body {
+    font-family: 'Inter', sans-serif !important;
+    position: relative;
+    min-height: 100vh;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Candal&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+h1 {
+    font-weight: 900 !important;
+    font-size: 50px !important;
+    color: black;
+}
+
+nav {
+    background-color: #ffffffbb;
+    backdrop-filter: blur(10px);
+}
+
+.navbar-brand img {
+    height: 18px;
+}
+
+.navbar-toggler {
+    border: 0px !important;
+    outline: none !important;
+}
+
+main {
+    padding-top: 7%;
+    min-height: 75vh;
+}
+
+#hero {
+    img {
+        max-height: 400px;
+    }
+
+    h1 {
+        padding-top: 60px;
+    }
+
+    button {
+        border-radius: 8px;
+    }
+}
+
+h2 {
+    color: black;
+    font-size: 24px;
+    font-weight: 800 !important;
+    padding-bottom: 15px;
+}
+
+p {
+    text-align: justify;
+    color: rgb(66, 66, 66);
+}
+
+article {
+    h2, p {
+        padding: 10px;
+    }
+}
+
+footer {
+    background-color: #253237;
+    color: #9db4c0;
+    font-size: 14px;
+    li {
+        padding-top: 5px;
+        a {
+            text-decoration: none;
+            color: #c2dfe3;
+            font-size: 16px;
+            transition: 0.04s;
+        }
+
+        a:hover {
+            color: #9db4c0;
+            transition: 0.04s;
+        }
+    }
+
+    img {
+        max-width: 20%;
+    }
+}
+
+// form
+textarea {
+    //resize: none !important;
+    min-height: 12em !important;
+}
