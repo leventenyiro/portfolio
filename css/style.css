@@ -7,6 +7,14 @@ body {
   min-height: 100vh;
 }
 
+::-moz-selection {
+  background-color: #ffff0077;
+}
+
+::selection {
+  background-color: #ffff0077;
+}
+
 h1 {
   font-weight: 900 !important;
   font-size: 50px !important;
@@ -58,13 +66,13 @@ p {
   color: #424242;
 }
 
-article h2, article p {
-  padding: 10px;
+article h2 {
+  padding-top: 30px;
 }
 
 .img-link {
   overflow: hidden;
-  height: 400px;
+  max-height: 600px;
   border-radius: 10px;
 }
 
@@ -112,6 +120,11 @@ footer li a:hover {
 
 footer img {
   max-width: 20%;
+}
+
+video {
+  width: 100%;
+  outline: none;
 }
 
 textarea {
