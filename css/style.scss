@@ -31,7 +31,8 @@ nav {
 }
 
 main {
-    padding-top: 7%;
+    padding-top: 10vh;
+    padding-bottom: 5vh;
     min-height: 75vh;
 }
 
@@ -64,6 +65,24 @@ p {
 article {
     h2, p {
         padding: 10px;
+    }
+}
+
+.img-link {
+    overflow: hidden;
+    height: 400px;
+    border-radius: 10px;
+    img {
+        transition: transform 0.5s, filter 0.5s ease-in-out;
+        transform-origin: center center;
+        filter: brightness(50%);
+    }
+}
+
+.img-link:hover {
+    img {
+        filter: brightness(90%);
+        transform: scale(1.02);
     }
 }
 
