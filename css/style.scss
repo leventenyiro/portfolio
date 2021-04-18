@@ -2,12 +2,13 @@ body {
     font-family: 'Inter', sans-serif !important;
     position: relative;
     min-height: 100vh;
+    background-image: url('../media/background.png');
+    background-repeat: repeat;
+    background-size: cover;
 }
 
 ::selection {
-    //background-color: #9db4c0aa;
     background-color: #ffff0077;
-    //background-color: lightgreen;
 }
 
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
@@ -76,9 +77,10 @@ article {
 
 .img-link {
     overflow: hidden;
-    max-height: 600px;
+    max-height: 40em;
     border-radius: 10px;
     img {
+        width: 100%;
         transition: transform 0.5s, filter 0.5s ease-in-out;
         transform-origin: center center;
         filter: brightness(50%);
@@ -89,6 +91,14 @@ article {
     img {
         filter: brightness(90%);
         transform: scale(1.02);
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .photography {
+        img {
+            margin-top: 10px !important;
+        }
     }
 }
 

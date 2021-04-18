@@ -15,78 +15,105 @@
 
 </head>
 <body>
-    <nav class="navbar fixed-top navbar-expand-md navbar-dark py-0">
-        <div class="container">
-            <div class="navbar-brand">Nyírő Levente</div>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-                <div class="navbar-nav">
-                    <a class="nav-link" aria-current="page" href="index.html">Kezdőlap</a>
-                    <a class="nav-link" href="about.html">Magamról</a>
-                    <a class="nav-link" href="hobby.html">Hobbi</a>
-                    <a class="nav-link active" href="form.html">Űrlap</a>
+    <header>
+        <nav class="navbar navbar-expand-md navbar-light fixed-top">
+            <div class="container">
+                <a class="navbar-brand" href="#">
+                    <img src="media//logo.png" alt="logo" class="img-fluid">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-lg-0">
+                        <li class="nav-item"><a class="nav-link" aria-current="page" href="index.html">Kezdőlap</a></li>
+                        <li class="nav-item"><a class="nav-link" href="about.html">Magamról</a></li>
+                        <li class="nav-item"><a class="nav-link" href="hobby.html">Hobbi</a></li>
+                        <li class="nav-item"><a class="nav-link active" href="form.html">Űrlap</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main class="container-md">
+        <h1>Üzenj nekem!</h1>
+        <form>
+            <div class="row">
+                <div class="col-md mb-3">
+                    <label for="formName" class="form-label">Name</label>
+                    <input type="text" class="form-control" name="inputName" id="formName" required="required">
+                </div>
+                <div class="col-md mb-3">
+                    <label for="formEmail" class="form-label">Email</label>
+                    <input type="email" class="form-control" name="inputEmail" id="formEmail" required="required">
+                </div>
+            </div>
+
+            <div class="row">
+                <fieldset class="col-md mb-3">
+                    <legend class="col-form-label col-sm">Érdeklődés:</legend>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="inputErdeklodes" id="formErdProg" value="programozas" required="required">
+                        <label class="form-check-label" for="formErdProg">Programozás</label>
+                    </div>
+    
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="inputErdeklodes" id="formErdFoto" value="fotozas">
+                        <label class="form-check-label" for="formErdFoto">Fotózás</label>
+                    </div>
+    
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="inputErdeklodes" id="formErdVideo" value="videozas">
+                        <label class="form-check-label" for="formErdVideo">Videózás</label>
+                    </div>
+    
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="inputErdeklodes" id="formErdEgyeb" value="egyeb">
+                        <label class="form-check-label" for="formErdEgyeb">Egyéb</label>
+                    </div>
+                </fieldset>
+
+                <div class="col-md-9 mb-3">
+                    <label for="formComment">Az üzenet:</label>
+                    <textarea rows="5" class="form-control" placeholder="Leave a comment here" id="formComment" required="required"></textarea>
+                </div>
+            </div>
+
+            <div class="form-check mb-3">
+                <input class="form-check-input" type="checkbox" value="" id="formFeedback">
+                <label class="form-check-label" for="formFeedback">Szeretnék visszajelzést</label>
+            </div>
+
+            <div class="row text-center">
+                <div class="col-sm mr-5">
+                    <input type="reset" class="btn btn-outline-danger px-5 py-2">
+                </div>
+                <div class="col-sm ml-5">
+                    <input type="submit" class="col-sm btn btn-primary px-5 py-2">
+                </div>
+            </div>
+        </form>
+    </main>
+
+    <footer class="container-fluid py-5">
+        <div class="container-md text-center">
+            <div class="row">
+                <div class="col-md pt-2">
+                    <h6>Elérhetőségek</h6>
+                    <ul class="list-unstyled">
+                        <li><a href="https://www.instagram.com/leventenyiro/">Instagram</a></li>
+                        <li><a href="https://github.com/leventenyiro">Github</a></li>
+                        <li><a href="https://www.linkedin.com/in/levente-ny%C3%ADr%C5%91-6a972a14a/">LinkedIn</a></li>
+                        <li><a href="b4kzan@inf.elte.hu">E-mail</a></li>
+                    </ul>
+                </div>
+                <div class="col-md pt-4">
+                    <img src="media//footer_logo.png" alt="footer_logo">
+                    <h6 class="pt-4">Készítette: Nyírő Levente (B4KZAN)</h6>
                 </div>
             </div>
         </div>
-    </nav>
-
-    <!--
-        text - email
-        2 radio - érdeklődés
-        textarea - üzenet
-        1 checkbox - kér választ
-        1 submit - elküldés
-        1 reset
-    -->
-    <section class="mt-5 container">
-        <h1>Üzenj nekem!</h1>
-        <form class="needs-validation">
-
-            <div class="form-floating mb-3">
-                <input type="email" class="form-control" id="floatingInput" placeholder="example@example.com">
-                <label for="floatingInput" class="text-secondary">E-mail cím</label>
-            </div>
-
-            <div class="form-floating mb-3">
-                <textarea rows="5" class="form-control" placeholder="Leave a comment here" id="floatingTextarea"></textarea>
-                <label for="floatingTextarea" class="text-secondary">Az üzeneted helye....</label>
-              </div>
-
-            <div class="mb-3 form-check">
-              <input type="checkbox" class="form-check-input" id="exampleCheck1">
-              <label class="form-check-label" for="exampleCheck1">Check me out</label>
-            </div>
-            <button type="submit" class="btn btn-primary">Submit</button>
-          </form>
-    </section>
-
-    <script>
-        // Example starter JavaScript for disabling form submissions if there are invalid fields
-        (function () {
-            'use strict'
-
-        // Fetch all the forms we want to apply custom Bootstrap validation styles to
-        var forms = document.querySelectorAll('.needs-validation')
-
-  // Loop over them and prevent submission
-  Array.prototype.slice.call(forms)
-    .forEach(function (form) {
-      form.addEventListener('submit', function (event) {
-        if (!form.checkValidity()) {
-          event.preventDefault()
-          event.stopPropagation()
-        }
-
-        form.classList.add('was-validated')
-      }, false)
-    })
-})()
-    </script>
-
-    <footer class="container-fluid bg-dark my-5 py-5">
-        <h2 class="text-light">Minden jog fenntartva</h2>
     </footer>
 </body>
 </html>

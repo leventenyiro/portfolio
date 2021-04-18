@@ -5,6 +5,9 @@ body {
   font-family: 'Inter', sans-serif !important;
   position: relative;
   min-height: 100vh;
+  background-image: url("../media/background.png");
+  background-repeat: repeat;
+  background-size: cover;
 }
 
 ::-moz-selection {
@@ -72,11 +75,12 @@ article h2 {
 
 .img-link {
   overflow: hidden;
-  max-height: 600px;
+  max-height: 40em;
   border-radius: 10px;
 }
 
 .img-link img {
+  width: 100%;
   -webkit-transition: -webkit-transform 0.5s, -webkit-filter 0.5s ease-in-out;
   transition: -webkit-transform 0.5s, -webkit-filter 0.5s ease-in-out;
   transition: transform 0.5s, filter 0.5s ease-in-out;
@@ -92,6 +96,12 @@ article h2 {
           filter: brightness(90%);
   -webkit-transform: scale(1.02);
           transform: scale(1.02);
+}
+
+@media screen and (max-width: 768px) {
+  .photography img {
+    margin-top: 10px !important;
+  }
 }
 
 footer {
