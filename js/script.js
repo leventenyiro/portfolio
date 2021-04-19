@@ -1,9 +1,18 @@
 function myAge() {
-    var actualDate = new Date(Date.now());
-    var myBirthDate = new Date(1999, 02, 25, 20, 25);
+    let actualDate = new Date(Date.now())
+    let myBirthDate = new Date(1999, 02, 25, 20, 25)
     
-    var diff = new Date(actualDate.getTime() - myBirthDate.getTime());
-    var age = diff.getUTCFullYear() - 1970;
+    let diff = new Date(actualDate.getTime() - myBirthDate.getTime())
+    let age = diff.getUTCFullYear() - 1970
 
-    document.getElementById("myAge").innerHTML = age;
+    document.getElementById("myAge").innerHTML = age
+}
+
+function reducedDesign() {
+    let isActive = document.getElementById("reducedDesign").checked;
+    if (isActive) {
+        document.body.style.fontSize = "large"
+    } else {
+        document.body.style.fontSize = "medium"
+    }
 }

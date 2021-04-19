@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
 body {
     font-family: 'Inter', sans-serif !important;
     position: relative;
@@ -11,20 +13,14 @@ body {
     background-color: #ffff0077;
 }
 
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
-
-@import url('https://fonts.googleapis.com/css2?family=Candal&display=swap');
-
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
-
 h1 {
     font-weight: 900 !important;
-    font-size: 50px !important;
+    font-size: 270% !important;
     color: black;
 }
 
 nav {
-    background-color: #ffffffbb;
+    background-color: #253237cc;
     backdrop-filter: blur(10px);
 }
 
@@ -34,7 +30,11 @@ nav {
 
 .navbar-toggler {
     border: 0px !important;
-    outline: none !important;
+    box-shadow: none !important;
+}
+
+.bi-list {
+    width: 300px !important;
 }
 
 main {
@@ -49,7 +49,7 @@ main {
     }
 
     h1 {
-        padding-top: 60px;
+        padding-top: 20%;
     }
 
     button {
@@ -59,7 +59,6 @@ main {
 
 h2 {
     color: black;
-    font-size: 24px;
     font-weight: 800 !important;
     padding-bottom: 15px;
 }
@@ -94,30 +93,26 @@ article {
     }
 }
 
-@media screen and (max-width: 768px) {
-    .photography {
-        img {
-            margin-top: 10px !important;
-        }
-    }
-}
-
 footer {
     background-color: #253237;
     color: #9db4c0;
-    font-size: 14px;
+    font-size: 100%;
     li {
         padding-top: 5px;
         a {
             text-decoration: none;
             color: #c2dfe3;
-            font-size: 16px;
+            font-size: 105%;
             transition: 0.04s;
         }
 
         a:hover {
             color: #9db4c0;
             transition: 0.04s;
+        }
+
+        a:visited {
+            color: #D4B0FF;
         }
     }
 
@@ -133,6 +128,6 @@ video {
 
 // form
 textarea {
-    //resize: none !important;
-    min-height: 12em !important;
+    resize: none !important;
+    min-height: 11em !important;
 }

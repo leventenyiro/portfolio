@@ -1,25 +1,22 @@
-<!-- https://k2-design.pl/team/ameli-nimbus/ -->
 <!DOCTYPE html>
 <html lang="hu">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Nyírő Levente</title>
-
-    <!-- fonts -->
-
+    <title>Nyírő Levente - Hobbi</title>
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/print.css">
+    <script src="./js/script.js"></script>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
-
 </head>
 <body>
     <header>
-        <nav class="navbar navbar-expand-md navbar-light fixed-top">
+        <nav class="navbar navbar-expand-md navbar-dark fixed-top">
             <div class="container">
-                <a class="navbar-brand" href="#">
-                    <img src="media//logo.png" alt="logo" class="img-fluid">
+                <a class="navbar-brand" href="index.html">
+                    <img src="media/logo_blue.png" alt="logo" class="img-fluid">
                 </a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
@@ -31,6 +28,10 @@
                         <li class="nav-item"><a class="nav-link active" href="hobby.html">Hobbi</a></li>
                         <li class="nav-item"><a class="nav-link" href="form.html">Űrlap</a></li>
                     </ul>
+                    <div class="form-check form-switch">
+                        <input class="form-check-input" type="checkbox" id="reducedDesign" onchange="reducedDesign()">
+                        <label class="form-check-label text-light" for="reducedDesign">Betűméret növelése</label>
+                    </div>
                 </div>
             </div>
         </nav>
@@ -58,19 +59,22 @@
             <h2>Fotózás</h2>
             <p>Komolyabban 2018 eleje óta foglalkozom fotózással, ilyenkor sikerült ugyanis a birtokomba keríteni egy DSLR gépet (Nikon D3300). Előtte mobilfotózással foglalkoztam, de rájöttem, hogy érdemes ebben kamatoztatnom a tudásomat, ugyanis lencse mögül tényleg másképp látja az ember az őt körülvevő világot. Kedvenc témáim szabadidős, városnézős, tájfényképészeti, illetve portré jellegűek, de bármire kapó vagyok, ha valami olyan téma, amiből csak tanulhatok. Emiatt a hobbim során otthonosan tudok mozogni a Photoshop világában.</p>
             <div class="row photography">
-                <div class="col-sm">
+                <figure class="col-sm mt-3">
                     <img src="media//bern.jpg" alt="Bern" class="img-fluid rounded">
-                </div>
-                <div class="col-sm">
+                    <figcaption>Bern</figcaption>
+                </figure>
+                <figure class="col-sm mt-3">
                     <a href="media/house.jpg">
                         <img src="media//house.jpg" alt="house" class="img-fluid rounded">
                     </a>
-                </div>
-                <div class="col-sm">
+                    <figcaption>Zadar utcakép</figcaption>
+                </figure>
+                <figure class="col-sm mt-3">
                     <a href="media/sea.jpg">
                         <img src="media//sea.jpg" alt="sea" class="img-fluid rounded">
                     </a>
-                </div>
+                    <figcaption>Naplemente az Adrián</figcaption>
+                </figure>
             </div>
         </article>
 
@@ -102,11 +106,11 @@
                         <li><a href="https://www.instagram.com/leventenyiro/">Instagram</a></li>
                         <li><a href="https://github.com/leventenyiro">Github</a></li>
                         <li><a href="https://www.linkedin.com/in/levente-ny%C3%ADr%C5%91-6a972a14a/">LinkedIn</a></li>
-                        <li><a href="b4kzan@inf.elte.hu">E-mail</a></li>
+                        <li><a href="mailto:b4kzan@inf.elte.hu">E-mail</a></li>
                     </ul>
                 </div>
                 <div class="col-md pt-4">
-                    <img src="media//footer_logo.png" alt="footer_logo">
+                    <img src="media/logo_blue.png" alt="footer_logo">
                     <h6 class="pt-4">Készítette: Nyírő Levente (B4KZAN)</h6>
                 </div>
             </div>
