@@ -3,7 +3,6 @@
 body {
   font-family: 'Inter', sans-serif !important;
   position: relative;
-  min-height: 100vh;
   background-image: url("../media/background.png");
   background-repeat: repeat;
   background-size: cover;
@@ -34,7 +33,7 @@ nav {
 }
 
 main {
-  padding-top: 10vh;
+  padding-top: 12vh;
   padding-bottom: 5vh;
   min-height: 75vh;
 }
