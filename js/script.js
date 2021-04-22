@@ -8,8 +8,8 @@ function myAge() {
     document.getElementById("myAge").innerHTML = age
 }
 
-function reducedDesign() {
-    let isActive = document.getElementById("reducedDesign").checked;
+function toggleFontSize() {
+    let isActive = document.getElementById("toggleFontSize").checked;
     if (isActive) {
         document.body.style.fontSize = "large"
     } else {

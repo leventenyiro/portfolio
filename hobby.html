@@ -29,8 +29,8 @@
                         <li class="nav-item"><a class="nav-link" href="form.html">Űrlap</a></li>
                     </ul>
                     <div class="form-check form-switch">
-                        <input class="form-check-input" type="checkbox" id="reducedDesign" onchange="reducedDesign()">
-                        <label class="form-check-label text-light" for="reducedDesign">Betűméret növelése</label>
+                        <input class="form-check-input" type="checkbox" id="toggleFontSize" onchange="toggleFontSize()">
+                        <label class="form-check-label text-light" for="toggleFontSize">Betűméret növelése</label>
                     </div>
                 </div>
             </div>
@@ -41,7 +41,7 @@
         <h1>Hobbijaim</h1>
         <article>
             <h2>Programozás</h2>
-            <p>A programozással az OKJ kezdetével egyidőben kezdtem el foglalkozni. Eleinte C#, PHP, SQL, illetve HTML-CSS volt a palettán, de később Java, JavaScript is az általam elsajátított programnyelvek közt szerepelt. Kedvenc programnyelvemnek a JavaScript-et mondanám, ugyanis a NodeJS nevű motor nagyon felkeltette az érdeklődésemet és egyszerre lett egy olyan rendszer számomra, amellyel a nap bármelyik szakában szívesen foglalkozom. Ezenkívül érdekel még a Flutter mobilprogramozás, illetve a dinamikus webfejlesztés, REST-API rendszerrel kiépítve.</p>
+            <p>A programozással az OKJ kezdetével egyidőben kezdtem el foglalkozni. Eleinte C#, PHP, SQL, illetve HTML-CSS volt a palettán, de később Java, JavaScript is az általam elsajátított programnyelvek közé került. Kedvenc programnyelvemnek a <b>JavaScript</b>-et mondanám, ugyanis a <b>NodeJS</b> nevű motor nagyon felkeltette az érdeklődésemet és egyszerre lett egy olyan rendszer számomra, amellyel a nap bármelyik szakában szívesen foglalkozom. Ezenkívül érdekel még a <b>Flutter</b> mobilprogramozás, illetve a dinamikus webfejlesztés, REST-API rendszerrel kiépítve.</p>
             <aside>
                 <h6>Egyik munkám: </h6>
                 <div class="img-link">
@@ -52,25 +52,25 @@
 
         <article>
             <h2>Ergonómia (UI & UX)</h2>
-            <p>A programozás mellett érdekel a front-end development világa is. A Pinterest nevű applikációt bújva, mindig elgondolkodom, hogyan is lehet a felhasználóknak egy olyan kellemes világot nyújtani az applikációkon belül, ahogyan azt megszokhatták máshol. Fontos, hogy át tudjuk adni az érzést, hogy egy minőségi applikációval van dolguk, ugyanis a felhasználók első találkozással egy céggel ma már a honlap, vagy a mobilapplikáció. Ebben segítségemre szolgált az Adobe Illustrator, ahogyan az Adobe XD nevű program is.</p>
+            <p>A programozás mellett érdekel a front-end development világa is. A <cite>Pinterest</cite> nevű applikációt bújva, mindig elgondolkodom, hogyan is lehet a felhasználóknak egy olyan kellemes világot nyújtani az applikációkon belül, ahogyan azt megszokhatták máshol. Fontos, hogy át tudjuk adni az érzést, hogy egy minőségi applikációval van dolguk, ugyanis a felhasználók első találkozással egy céggel ma már a honlap, vagy a mobilapplikáció. Ebben segítségemre szolgált az <cite>Adobe Illustrator</cite>, ahogyan az <cite>Adobe XD</cite> nevű program is.</p>
         </article>
 
         <article>
             <h2>Fotózás</h2>
-            <p>Komolyabban 2018 eleje óta foglalkozom fotózással, ilyenkor sikerült ugyanis a birtokomba keríteni egy DSLR gépet (Nikon D3300). Előtte mobilfotózással foglalkoztam, de rájöttem, hogy érdemes ebben kamatoztatnom a tudásomat, ugyanis lencse mögül tényleg másképp látja az ember az őt körülvevő világot. Kedvenc témáim szabadidős, városnézős, tájfényképészeti, illetve portré jellegűek, de bármire kapó vagyok, ha valami olyan téma, amiből csak tanulhatok. Emiatt a hobbim során otthonosan tudok mozogni a Photoshop világában.</p>
+            <p>Komolyabban <cite>2018</cite> eleje óta foglalkozom fotózással, ilyenkor sikerült ugyanis a birtokomba keríteni egy DSLR gépet (<b>Nikon D3300</b>). Előtte mobilfotózással foglalkoztam, de rájöttem, hogy érdemes ebben kamatoztatnom a tudásomat, ugyanis lencse mögül tényleg másképp látja az ember az őt körülvevő világot. Kedvenc témáim szabadidős, városnézős, tájfényképészeti, illetve portré jellegűek, de bármire kapó vagyok, ha valami olyan téma, amiből csak tanulhatok. Emiatt a hobbim során otthonosan tudok mozogni a <cite>Photoshop</cite> világában.</p>
             <div class="row photography">
                 <figure class="col-sm mt-3">
                     <img src="media//bern.jpg" alt="Bern" class="img-fluid rounded">
                     <figcaption>Bern</figcaption>
                 </figure>
                 <figure class="col-sm mt-3">
-                    <a href="media/house.jpg">
+                    <a href="media/house.jpg" target="_blank">
                         <img src="media//house.jpg" alt="house" class="img-fluid rounded">
                     </a>
                     <figcaption>Zadar utcakép</figcaption>
                 </figure>
                 <figure class="col-sm mt-3">
-                    <a href="media/sea.jpg">
+                    <a href="media/sea.jpg" target="_blank">
                         <img src="media//sea.jpg" alt="sea" class="img-fluid rounded">
                     </a>
                     <figcaption>Naplemente az Adrián</figcaption>
@@ -80,7 +80,7 @@
 
         <article>
             <h2>Videózás</h2>
-            <p>A fotózásból jött az ötlet, hogy mi is lenne, ha kipróbálnám magam ebben, úgyhogy fogtam az állványom és megpróbáltam stabilizátorként használni, majd megvágtam Adobe Premiere Pro segítségével. Az eredmény nem a legtökéletesebb, de kezdésnek nem is rossz. Természetesen később fejleszteném tudásom az After Effects világában is.</p>
+            <p>A fotózásból jött az ötlet, hogy mi is lenne, ha kipróbálnám magam ebben, úgyhogy fogtam az állványom és megpróbáltam stabilizátorként használni, majd megvágtam <cite>Adobe Premiere Pro</cite> segítségével. Az eredmény nem a legtökéletesebb, de kezdésnek nem is rossz. Természetesen később fejleszteném tudásom az <cite>After Effects</cite> világában is.</p>
             <section>
                 <h6>Az egyik videóm:</h6>
                 <video controls="controls" poster="media/poster.png">
@@ -93,7 +93,7 @@
         <article>
             <h2>Egyéb hobbik</h2>
             <p>A fentieken kívül rengeteg minden érdekel még. Az autók világa az egyik, ami nagyon meg tud fogni szabadidőmben. Beülni az autóba és csak járni az országot, a világot – a legcsodálatosabb dolgok közül az egyik számomra – így kapcsolódik az általam kedvelt dolgok közé az utazás is.</p>
-            <p>Sportok közül a labdarúgás, kosár, darts, illetve biliárd is kedveltnek mondható, illetve még rengeteg mindenben szeretem kipróbálni magam.</p>
+            <p>Sportok közül a labdarúgás, kosár, darts, illetve biliárd is kedveltnek mondható. Ezeken kívül még rengeteg mindenben szeretem kipróbálni magam.</p>
         </article>
     </main>
 
