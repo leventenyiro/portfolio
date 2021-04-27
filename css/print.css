@@ -1,19 +1,19 @@
-@media print {
-  body {
-    max-width: unset;
-  }
-  header {
-    display: none;
-  }
-  main, footer {
-    width: 100%;
-    padding: 0;
-    max-width: unset;
-  }
-  main {
-    min-height: 0;
-  }
-  a:after {
-    content: " (" attr(href) ")";
-  }
+@import 'style.css';
+
+body {
+  max-width: unset;
+}
+header {
+  display: none;
+}
+main, footer {
+  width: 100%;
+  padding: 0;
+  max-width: unset;
+}
+main {
+  min-height: 0;
+}
+a:after {
+  content: " (" attr(href) ")";
 }
